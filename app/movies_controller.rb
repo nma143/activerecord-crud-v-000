@@ -20,10 +20,6 @@ def can_be_created_with_a_hash_of_attributes
       lead: "Paul Newman",
       in_theaters: false
   }
-  # movie = Movie.new
-  # attributes.each do |k,v|
-  #   movie.send("#{k}=", v)
-  # end
   Movie.create(attributes)
 end
 
