@@ -25,7 +25,7 @@ def can_be_created_with_a_hash_of_attributes
     movie.send("#{k}=", v)
   end
   puts "Hey Nikki #{movie.title}"
-  movie.save
+  movie.create
 end
 
 def can_be_created_in_a_block(args = __)
