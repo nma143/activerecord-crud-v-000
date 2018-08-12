@@ -67,8 +67,8 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   m = Movie.create(title: "Awesome Flick")
+  m.title = "Even Awesomer Flick"
   m.update(:title => "Even Awesomer Flick")
-  m.save
   m
 end
 
