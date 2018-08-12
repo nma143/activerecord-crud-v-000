@@ -23,8 +23,8 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.new
   attributes.each do |k,v|
     movie.send("#{k}=", v)
-    puts movie.send("#{k}")
   end
+  puts movie
   movie.save
 end
 
